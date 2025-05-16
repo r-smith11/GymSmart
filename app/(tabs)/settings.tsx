@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function AboutScreen() {
+export default function SettingsScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>GymSmart is your go-to for all things gym-related.</Text>
+      <Text style={styles.text}>TODO: Settings Screen</Text>
     </View>
   );
 }

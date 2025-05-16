@@ -12,7 +12,7 @@ export default function Index() {
         <ImageViewer imgSource={PlaceholderImage} />
       </View>
       <View style={styles.footerContainer}>
-        <Button theme="primary" label="Log in/Sign up" />
+        <Button theme="primary" label="Log out" />
       </View>
     </View>
   );

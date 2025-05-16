@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function LoginScreen() {
+export default function FoodScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Login screen</Text>
+      <Text style={styles.text}>Food screen</Text>
     </View>
   );
 }
