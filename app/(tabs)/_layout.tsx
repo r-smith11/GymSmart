@@ -1,9 +1,14 @@
+import { useWindowDimensions } from 'react-native';
 import { Tabs } from 'expo-router';
-
 import Ionicons from '@expo/vector-icons/Ionicons';
 
+const MIN_WIDTH_PER_TAB = 80;
+const TAB_COUNT = 5;
 
 export default function TabLayout() {
+  const { width } = useWindowDimensions();
+  const showLabels = width >= MIN_WIDTH_PER_TAB * TAB_COUNT;
+
   return (
     <Tabs
         screenOptions={{
@@ -16,9 +21,10 @@ export default function TabLayout() {
             tabBarStyle: {
                 backgroundColor: '#25292e',
             },
+            tabBarShowLabel: showLabels,
         }}
     >
-        
+
       <Tabs.Screen
         name="index"
         options={{
@@ -58,7 +64,7 @@ export default function TabLayout() {
           ),
         }}
       />
-        
+
       <Tabs.Screen
         name="settings"
         options={{

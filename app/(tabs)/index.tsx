@@ -43,11 +43,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   imageContainer: {
-    flex: 1,
+    flex: 3,
   },
   greetingContainer: {
+    flex: 1,
     alignItems: 'center',
-    paddingVertical: 24,
+    justifyContent: 'center',
   },
   greeting: {
     color: '#888',
